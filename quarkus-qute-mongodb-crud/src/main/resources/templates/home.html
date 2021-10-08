@@ -1,0 +1,51 @@
+<!doctype html>
+<head>
+    <title>Qute Example</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+          rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
+    </script>
+</head>
+<style type="text/css">
+   body { background: purple !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+h2,th,td {
+	color: #f3f3f3;
+  	}
+</style>
+<body>
+<div class="container">
+    <h2 class="text-light" >User CRUD operation with Quarkus + Qute + MongoDB</h2>
+    <a href="/create" class="btn btn-primary" role="button">Create New User</a>
+    <table class="table">
+        <thead >
+        <tr>
+            <th class="text-light bg-dark" scope="col">Id</th>
+            <th class="text-light bg-dark" scope="col">First Name</th>
+            <th class="text-light bg-dark" scope="col">Last Name</th>
+            <th class="text-light bg-dark" scope="col">Email</th>
+            <th class="text-light bg-dark" scope="col"></th>
+            <th scope="col"></th>
+        </tr>
+        </thead>
+        <tbody>
+        {#for user in users}
+        <tr>
+            <th class="text-light bg-dark" scope="row">{user.id}</th>
+            <td class="text-light bg-dark">{user.firstName}</td>
+            <td class="text-light bg-dark">{user.lastName}</td>
+            <td class="text-light bg-dark">{user.emailId}</td>
+            <td><a href="/update/{user.id}" class="btn btn-warning" role="button">
+                Update</a></td>
+            <td><a href="/delete/{user.id}" class="btn btn-danger" role="button">
+                Delete</a></td>
+        </tr>
+        {/for}
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
