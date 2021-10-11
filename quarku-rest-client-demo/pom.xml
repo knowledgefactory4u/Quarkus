@@ -44,10 +44,6 @@ https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM
           <artifactId>quarkus-apache-httpclient</artifactId>
       </dependency>
     <dependency>
-          <groupId>io.quarkus</groupId>
-          <artifactId>quarkus-resteasy-jsonb</artifactId>
-    </dependency>
-    <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-arc</artifactId>
     </dependency>
