@@ -3,17 +3,20 @@
 
 <h3>How to run the application in your local machine?</h3>
 
-Step 1: Clone or download the code
+<b>Step 1:</b> Clone or download the code
 
-Step 2: Open the project using your favourite IDE. I am using IntelliJ IDEA.
+<b>Step 2:</b> Open the project using your favourite IDE. I am using IntelliJ IDEA.
 
-Step 3: Build application  jar file: 
+<b>Step 3:</b> Build application  jar file: 
+
 mvn clean package
+
 or
+
 gradle build
 
-Step 4: Start the application: java -jar quarkus-run.jar
+<b>Step 4:</b> Start the application: java -jar quarkus-run.jar
 
-Access the URL in  the browser: http://localhost:8080/
+<b>Step 5:</b> Access the URL in  the browser: http://localhost:8080/
 
 
