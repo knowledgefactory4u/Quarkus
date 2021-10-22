@@ -9,11 +9,11 @@
 
 <b>Step 3:</b> Build application  jar file: 
 
-mvn clean package
+Maven: mvn clean package
 
 or
 
-gradle build
+Gradle: gradle build
 
 <b>Step 4:</b> Start the application: java -jar quarkus-run.jar
 
