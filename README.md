@@ -7,8 +7,11 @@ How to run the application in your local machine?
 Step 2: Open the project using your favourite IDE. I am using IntelliJ IDEA.
 
 
-Step 3: Build application  jar file: mvn clean package
+Step 3: Build application  jar file: 
 
+mvn clean package
+or
+gradle build
 
 Step 4: Start the application: java -jar quarkus-run.jar
 
