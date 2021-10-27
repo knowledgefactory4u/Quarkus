@@ -17,6 +17,6 @@ Gradle: gradle build
 
 <b>Step 4:</b> Start the application: java -jar quarkus-run.jar
 
-<b>Step 5:</b> Access the URL in  the browser: http://localhost:8080/
+
 
 
