@@ -20,8 +20,8 @@ class UserData {
         User user2 = new User("user2", "user2@gmail.com");
         User user3 = new User("user3", "user3@gmail.com");
         dummyUsers.put(22l, user1);
-        dummyUsers.put(13l, user1);
-        dummyUsers.put(19l, user1);
+        dummyUsers.put(13l, user2);
+        dummyUsers.put(19l, user3);
         return dummyUsers;
     }
 }
