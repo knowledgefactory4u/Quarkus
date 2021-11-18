@@ -23,9 +23,9 @@ public class EmployeeService {
     }
 
     public ByteArrayInputStream load() {
-        List<Employee> tutorials = fetchAll();
+        List<Employee> employees = fetchAll();
 
-        ByteArrayInputStream in = CSVHelper.employeesToCSV(tutorials);
+        ByteArrayInputStream in = CSVHelper.employeesToCSV(employees);
         return in;
     }
 
